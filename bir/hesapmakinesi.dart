@@ -10,14 +10,30 @@ void main() {
 
   if (islem == "+") {
     print(double.parse(birincisayi) + double.parse(ikincisayi));
-  }
-  if (islem == "-") {
+  } else if (islem == "-") {
     print(double.parse(birincisayi) - double.parse(ikincisayi));
-  }
-  if (islem == "*") {
+  } else if (islem == "*") {
     print(double.parse(birincisayi) * double.parse(ikincisayi));
-  }
-  if (islem == "/") {
+  } else if (islem == "/") {
     print(double.parse(birincisayi) / double.parse(ikincisayi));
+  } else {
+    print("invalid operator");
+  }
+
+  switch (islem) {
+    case "+":
+      print(double.parse(birincisayi) + double.parse(ikincisayi));
+      break;
+    case "-":
+      print(double.parse(birincisayi) - double.parse(ikincisayi));
+      break;
+    case "*":
+      print(double.parse(birincisayi) * double.parse(ikincisayi));
+      break;
+    case "/":
+      print(double.parse(birincisayi) / double.parse(ikincisayi));
+      break;
+    default:
+      print("invalid operator"); //break switchten çıkar break koymayabilirsin
   }
 }
